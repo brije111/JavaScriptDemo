@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="utf-8">
+            <title>JSON Task</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<link rel = "stylesheet"
+type = "text/css"
+href = "css/index.css" />    
+<script src="script/products.js"></script>
+    </head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h2 class="display-5">Product Catalog</h2>
+        </div>
+        <nav class="nav-pills">
+                <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Filter</a>
+                        <div class="dropdown-menu">
+                            <a id="a1" class="dropdown-item" href="#" onclick="filter(this)">all products</a>
+                            <a id="a2" class="dropdown-item" href="#" onclick="filter(this)">products with expired warranty</a>
+                            <a id="a3" class="dropdown-item" href="#" onclick="filter(this)">products whose warranty will be expired soon (within 120 days)</a>
+                        </div>
+                        </li>
+                </ul>
+        </nav>
+        <table class="table table-responsive" id="my_table">
+            <thead>
+                    <th scope="col">#</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Sub-Category</th>
+                    <th scope="col">name</th>
+                    <th scope="col">serialNo</th>
+                    <th scope="col">orderNo</th>
+                    <th scope="col">path</th>
+                    <th scope="col">imageSrc</th>
+                    <th scope="col">imei</th>
+                    <th scope="col">type</th>
+                    <th scope="col">modelNo</th>
+                    <th scope="col">orderedDate</th>
+                    <th scope="col">deliveryDate</th>
+                    <th scope="col">price</th>
+                    <th scope="col">discount</th>
+                    <th scope="col">amountPaid</th>
+                    <th scope="col">warrantyPeriod</th>
+                    <th scope="col">extendedWarranty</th>
+                    <th scope="col">exchangable</th>
+                    <th scope="col">specifications</th>
+                    <th scope="col">features</th>
+                    <th scope="col">insurance</th>
+            </thead>
+        </table>
+    </div>
+</body>
+<script type="text/javascript" src="script/index.js"></script>
+</html>
